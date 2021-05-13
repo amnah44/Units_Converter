@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Converts</string>
+    <string name="result">Result</string>
+    <string name="enter_number">Enter Number</string>
+    <string name="length_units">Length Units</string>
+    <string name="centimeter_to_kilometre">Centimeter To Kilometre</string>
+    <string name="meter_to_kilometre">Meter To Kilometre</string>
+    <string name="kiometer_to_millimetre">Kiometer To Millimetre</string>
+    <string name="mile_to_meter">Mile To Meter</string>
+    <string name="temperature">Temperature</string>
+    <string name="celsius_to_fahrenheit">Celsius To Fahrenheit</string>
+    <string name="celsius_to_kelvin">Celsius To Kelvin</string>
+    <string name="volume">Volume</string>
+    <string name="liter_to_milliliter">Liter To Milliliter</string>
+</resources>

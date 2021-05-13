@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/input_txt"
+        style="@style/input_attr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/result"
+        style="@style/input_attr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_txt" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/length_units" />
+
+        <RadioButton
+            android:id="@+id/cmToKm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="centimetreToKilometre"
+            android:text="@string/centimeter_to_kilometre" />
+
+        <RadioButton
+            android:id="@+id/mTokm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="meterToKilometre"
+            android:text="@string/meter_to_kilometre" />
+
+        <RadioButton
+            android:id="@+id/kmToMm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="kilometreToMillimetre"
+            android:text="@string/kiometer_to_millimetre" />
+
+        <RadioButton
+            android:id="@+id/mmToM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="mileToMeter"
+            android:text="@string/mile_to_meter" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/temperature" />
+
+        <RadioButton
+            android:id="@+id/cToF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="celsiusToFahrenheit"
+            android:text="@string/celsius_to_fahrenheit" />
+
+        <RadioButton
+            android:id="@+id/cToK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="celsiusToKelvin"
+            android:text="@string/celsius_to_kelvin" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/volume" />
+
+        <RadioButton
+            android:id="@+id/lToMl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="literToMilliliter"
+            android:text="@string/liter_to_milliliter" />
+
+
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
